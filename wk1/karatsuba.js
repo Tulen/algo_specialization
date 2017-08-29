@@ -14,6 +14,7 @@
 
 
 // Assumes x and y have same number of digits
+// JavaScript number size limitation
 function karatsuba(x, y, length = (x.toString().length)) {
   
   function splitInteger(int) {
@@ -33,4 +34,8 @@ function karatsuba(x, y, length = (x.toString().length)) {
 };
 
 let answer = karatsuba(3141592653589793238462643383279502884197169399375105820974944592, 2718281828459045235360287471352662497757247093699959574966967627);
+
+let answerB = answer % Math.pow(10, 35);
+console.log(answer);
+
 
