@@ -14,7 +14,7 @@
 
 
 # Assumes x and y have same number of digits
-# Doesn't work for 
+# Doesn't work for odd numbers
 def split_integer(int, length)
   output = []
   split_val = 10**(length / 2)
